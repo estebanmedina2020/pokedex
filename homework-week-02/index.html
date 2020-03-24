@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Responsive Animated Sidebar Menu</title>
+  <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+  <link rel="stylesheet" href="style.css">
+<script>
+  function openSlideMenu(){
+    document.getElementById('menu').style.width = '250px';
+    document.getElementById('content').style.marginLeft = '250px';
+  }
+  function closeSlideMenu(){
+    document.getElementById('menu').style.width = '0';
+    document.getElementById('content').style.marginLeft = '0';
+  }
+</script>
+</head>
+<body>
+
+  <div id="content">
+
+    <span class="slide">
+      <a href="#" onclick="openSlideMenu()">
+        <i class="fas fa-bars"></i>
+      </a>
+    </span>
+
+    <div id="menu" class="nav">
+      <a href="#" class="close" onclick="closeSlideMenu()">
+        <i class="fas fa-times"></i>
+      </a>
+      <a href="#">Inicio</a>
+      <a href="#">Historia</a>
+      <a href="#">Servicios</a>
+      <a href="#">Portfolio</a>
+      <a href="#">Contacto</a>
+    </div>
+
+    <article>
+      <div class="article">
+        <p class="headline01"><span class="special-headline">Lorem</span><br> Ipsum</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        <a href="#" target="blank">Lorem ipsum dolor sit amet</a>
+        <p class="headline01"><span class="special-headline">Lorem</span><br> Ipsum</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        <a href="#" target="blank">Lorem ipsum dolor sit amet</a>
+        <p class="headline01"><span class="special-headline">Lorem</span><br> Ipsum</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        <a href="#" target="blank">Lorem ipsum dolor sit amet</a>
+        <p class="headline01"><span class="special-headline">Lorem</span><br> Ipsum</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        <a href="#" target="blank">Lorem ipsum dolor sit amet</a>
+        <p class="headline01"><span class="special-headline">Lorem</span><br> Ipsum</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        <a href="#" target="blank">Lorem ipsum dolor sit amet</a>
+        <p class="headline01"><span class="special-headline">Lorem</span><br> Ipsum</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        <a href="#" target="blank">Lorem ipsum dolor sit amet</a>
+      </div>
+    </article>
+    <footer>
+        <p class="content-footer">Creado por Esteban Medina. Términos de uso: This work is licensed under a <a href="https://creativecommons.org/" target="blank">Creative Commons Attribution 2.0</a> Generic License.</p>
+      </footer>
+
+  </div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
