@@ -1,13 +1,12 @@
 import React from "react";
-function App() {
+import Logo from "./Logo.js";
+
+function BestPokemon() {
   return (
     <div>
-      <article>
-        <h1>Welcome to the Pokedex</h1>
-        <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/016.png"></img>
-      </article>
+      <Logo />
     </div>
   );
 }
 
-export default App;
+export default BestPokemon;
