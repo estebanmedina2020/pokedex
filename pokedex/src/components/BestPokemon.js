@@ -1,11 +1,12 @@
 import React from "react";
 function BestPokemon() {
+  const abilities = ["Anticipation", "Adaptability", "Run-Away"];
   return (
-    <div>
-      <article>
-        <p>My favourite Pokemon is Squirtle</p>
-      </article>
-    </div>
+    <ul>
+      {abilities.map((name) => {
+        return <li>{name}</li>;
+      })}
+    </ul>
   );
 }
 
