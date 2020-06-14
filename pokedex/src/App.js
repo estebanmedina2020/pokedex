@@ -1,12 +1,23 @@
 import React from "react";
-import Logo from "./Logo.js";
+import Logo from "./components/Logo.js";
+import BestPokemon from "./BestPokemon.js";
 
-function BestPokemon() {
+const Pokedex = () => (
+  <div>
+    <Logo />
+    <BestPokemon />
+  </div>
+);
+
+export default Pokedex;
+
+/*
+function Pokedex() {
   return (
     <div>
       <Logo />
+      <BestPokemon />
     </div>
   );
 }
-
-export default BestPokemon;
+*/
