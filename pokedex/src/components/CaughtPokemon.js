@@ -1,10 +1,11 @@
 import React from "react";
-var date={new Date().toLocaleDateString()}
+const date = new Date().toLocaleDateString();
 
 function CaughtPokemon() {
   return (
     <div>
       <p>Caught 0 Pokemon on date</p>
+      {date}
     </div>
   );
 }
