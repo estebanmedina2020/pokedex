@@ -1,6 +1,6 @@
 import React from "react";
 import Logo from "./components/Logo.js";
-import BestPokemon from "./components/BestPokemon.js";
+import BestPokemon from "./components/CaughtPokemon.js";
 
 const Pokedex = () => (
   <div>
