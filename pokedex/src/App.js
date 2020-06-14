@@ -5,7 +5,7 @@ import CaughtPokemon from "./components/CaughtPokemon.js";
 
 const Pokedex = () => (
   <div>
-    <Logo />
+    <Logo appName="Pokedex" />
     <BestPokemon />
     <CaughtPokemon />
   </div>

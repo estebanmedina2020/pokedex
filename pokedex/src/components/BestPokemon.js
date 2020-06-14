@@ -1,10 +1,15 @@
 import React from "react";
 function BestPokemon() {
-  const abilities = ["Anticipation", "Adaptability", "Run-Away"];
+  const abilities = [" Anticipation", " Adaptability", " Run-Away"];
   return (
     <ul>
-      {abilities.map((name) => {
-        return <li>{name}</li>;
+      {abilities.map((name, index) => {
+        return (
+          <li>
+            {index}
+            {name}
+          </li>
+        );
       })}
     </ul>
   );
