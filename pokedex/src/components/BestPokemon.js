@@ -1,18 +1,17 @@
 import React from "react";
-function BestPokemon() {
-  const abilities = [" Anticipation", " Adaptability", " Run-Away"];
+const BestPokemon = (props) => {
   return (
     <ul>
-      {abilities.map((name, index) => {
+      {props.abilities.map((abilities, index) => {
         return (
           <li>
             {index}
-            {name}
+            {abilities}
           </li>
         );
       })}
     </ul>
   );
-}
+};
 
 export default BestPokemon;
