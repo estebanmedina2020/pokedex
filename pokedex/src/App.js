@@ -9,7 +9,7 @@ const Pokedex = () => (
   <div>
     <Logo appName="Pokedex" />
     <BestPokemon abilities={abilities} />
-    <CaughtPokemon />
+    <CaughtPokemon date={new Date().toLocaleDateString()} />
   </div>
 );
 
