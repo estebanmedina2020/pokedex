@@ -1,7 +1,8 @@
 import React from "react";
-import Logo from "./components/Logo.js";
-import BestPokemon from "./components/BestPokemon.js";
-import CaughtPokemon from "./components/CaughtPokemon.js";
+import Logo from "./components/Logo";
+import CaughtPokemon from "./components/CaughtPokemon";
+import BestPokemon from "./components/BestPokemon";
+import "./App.css";
 
 const abilities = [" Anticipation", " Adaptability", " Run-Away"];
 
