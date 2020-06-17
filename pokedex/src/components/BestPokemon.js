@@ -1,5 +1,11 @@
-import React from "react";
-const BestPokemon = (props) => {
+import React, { Component } from "react";
+
+class BestPokemon extends Component
+state = {
+    PokemonNames: [],
+  };
+
+  const BestPokemon = (props) => {
   return (
     <ul>
       {props.abilities.map((abilities, index) => {
