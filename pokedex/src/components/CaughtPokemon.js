@@ -1,14 +1,14 @@
 import React, { Component } from "react";
 
-class CaughtPokemon extends Component {
+class IncrementTotal extends Component {
   state = {
-    caughtPokemon: 0,
+    incrementTotal: 0,
   };
 
   catch = () => {
     this.setState((prevState) => {
       return {
-        caughtPokemon: prevState.caughtPokemon + 1,
+        incrementTotal: prevState.incrementTotal + 1,
       };
     });
   };
@@ -16,7 +16,7 @@ class CaughtPokemon extends Component {
   reset = () => {
     this.setState(() => {
       return {
-        caughtPokemon: 0,
+        incrementTotal: 0,
       };
     });
   };
@@ -24,11 +24,11 @@ class CaughtPokemon extends Component {
   render() {
     return (
       <div>
-        <p>Caught {this.state.caughtPokemon} Pokemon on </p>
+        <p>Caught {this.state.incrementTotal} Pokemon on </p>
         {this.props.date}
         <button onClick={this.catch}>Catch</button>
 
-        {this.state.caughtPokemon > 0 ? (
+        {this.state.incrementTotal > 0 ? (
           <ResetButton reset={this.reset} />
         ) : null}
       </div>
@@ -40,7 +40,7 @@ const ResetButton = (props) => {
   return <button onClick={props.reset}>Reset</button>;
 };
 
-export default CaughtPokemon;
+export default IncrementTotal;
 
 /*
 import React { Component } from "react";
