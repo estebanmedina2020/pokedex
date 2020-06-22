@@ -1,6 +1,5 @@
 import React from "react";
 import Logo from "./components/Logo";
-import IncrementTotal from "./components/CaughtPokemon";
 import BestPokemon from "./components/BestPokemon";
 import "./App.css";
 import CaughtPokemon from "./components/CaughtPokemon";
