@@ -66,8 +66,8 @@ class BestPokemon extends Component {
               <h3>Pokemon Abilities</h3>
 
               <ul>
-                {this.props.Abilities.map((Abilitie, index) => {
-                  return <li key={index}>{Abilitie}</li>;
+                {this.props.Abilities.map((Abilities, index) => {
+                  return <li key={index}>{Abilities}</li>;
                 })}
               </ul>
             </>
