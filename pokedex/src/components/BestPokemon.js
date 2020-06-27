@@ -1,3 +1,27 @@
+import React, { useState } from "react";
+
+function BestPokemonSelector() {
+  const [pokemonId, setPokemonId] = useState(null);
+
+  function handleBulbasaurClick() {
+    setPokemonId(1);
+  }
+  function handleCharmanderClick() {
+    setPokemonId(4);
+  }
+
+  return (
+    <div>
+      <button onClick={handleBulbasaurClick}>Fetch Bulbasaur</button>
+      <button onClick={handleCharmanderClick}>Fetch Charmander</button>
+      {pokemonId ? <BestPokemonFetcher pokemonId={pokemonId} /> : null}
+    </div>
+  );
+}
+
+export default BestPokemonSelector;
+
+/*
 import React, { Component, useState, useEffect } from "react";
 function BestPokemonFetcher() {
   useEffect(() => {
@@ -27,3 +51,4 @@ class BestPokemon extends Component {
   }
 }
 export default BestPokemonFetcher;
+*/
